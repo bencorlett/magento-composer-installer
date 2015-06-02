@@ -128,8 +128,6 @@ class InstalledPackageFileSystemRepository implements InstalledPackageRepository
             $this->hasChanges = true;
             return;
         }
-
-        throw new \Exception(sprintf('Package: "%s" is already installed', $package->getName()));
     }
 
     /**
